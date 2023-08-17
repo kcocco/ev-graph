@@ -1,15 +1,15 @@
-1. Database Connection: All files will need to connect to the same graph database. The connection parameters (like database name, host, port, username, password) will be shared across all files.
+1. Dependencies: These are the libraries that will be used across the files. They include Python's built-in libraries and third-party libraries such as `py2neo` for interacting with the graph database, `pandas` for data manipulation and analysis, and `jupyter` for the notebook.
 
-2. EV Data Model: The structure of the EV data (i.e., the nodes and relationships in the graph database) will be defined in "ev_data_model.py" and used in "database_setup.py", "ev_data_insertion.py", and "ev_query.py". This includes the names of the nodes (like "ElectricVehicle") and properties (like "Range", "List Price", "Battery Size").
+2. EV Model: This is the data schema that will be shared across the files. It will define the properties of an Electric Vehicle such as Range, List Price, Battery Size, etc.
 
-3. Example Data: The example EV data to be inserted into the database will be defined in "ev_data_insertion.py" and used in "database_setup.py".
+3. Graph Database Connection: This is the connection to the graph database that will be shared across the files. It will be used to store and retrieve data.
 
-4. Query Function: The function to run a query on the database will be defined in "ev_query.py" and used in "app.py". The name of this function will be shared.
+4. Example Data: This is the sample data that will be used to populate the graph database. It will be shared across the files.
 
-5. Print Function: The function to print the result of a query will be defined in "app.py". The name of this function will be shared.
+5. Query Function: This is the function that will be used to run queries on the graph database. It will be shared across the files.
 
-6. Message Names: Any messages or prompts displayed to the user (like "Enter your query:" or "The result is:") will be defined in "app.py" and potentially used in other files.
+6. Print Function: This is the function that will be used to print the results of the queries. It will be shared across the files.
 
-7. Error Handling: Any error messages or exceptions will be defined and used across all files. This includes the names of the exceptions (like "DatabaseConnectionError" or "InvalidQueryError").
+7. Notebook: This is the Jupyter notebook that will contain all the code. It will import and use the functions and data from the other files.
 
-8. Import Statements: All files will need to import the necessary Python libraries (like py2neo for interacting with the graph database). The names of these libraries will be shared across all files.
+Note: As this is a Python-based project, there are no DOM elements, message names, or exported variables involved.
